@@ -66,12 +66,12 @@ function colorClock(){
   var hexColor = '#' + hours + minutes + seconds;
   document.body.style.background = hexColor;
   
-}
-
-setTimeout(function() {
+  setTimeout(function() {
     colorClock();
   }, 1000);
+}
 
+colorClock();
 
 </script>
 </body>
