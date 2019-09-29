@@ -1,0 +1,13 @@
+body {
+  background-color:	#009900;
+}
+td {
+  border:			1pt solid #550000;
+  color:			#005500;
+  font-size:		14pt;
+  width:			10%;
+}
+p.check {
+	font-size:		10pt;
+	color:			red;
+}
