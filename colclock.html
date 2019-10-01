@@ -10,12 +10,13 @@
 <meta name="robots" content="noindex">
 <html>
 	<head>
+		<title>ColorClock</title>
 		<meta name="description" content="ColorClock, created by a lesson of CodeBerry">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>ColorClock</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet" type="text/css">
+		<link href="CSS/style2.css" rel="stylesheet" type="text/css" >
 		
 		<style id="jsbin-css">
 			* {
@@ -41,33 +42,12 @@
 	<body>
 		<div id="clock">00:00:00</div>
 		<script id="jsbin-javascript">
-			function colorClock(){
-				var date = new Date();
-				var hours = date.getHours();
-				var minutes = date.getMinutes();
-				var seconds = date.getSeconds();
-				
-				if (hours <= 9) {
-					hours = '0' + hours;
-				}
-				if (minutes <= 9) {
-					minutes = '0' + minutes;
-				}
-				if (seconds <= 9) {
-					seconds = '0' + seconds;
-				}
-				
-				var clockFace = hours + ':' + minutes + ':' + seconds;
-				
-				document.getElementById('clock').innerHTML = clockFace;
-				
-				var hexColor = '#' + hours + minutes + seconds;
-				document.body.style.background = hexColor;
-			}
-			
 			setTimeout(function() {
 				colorClock();
 			}, 1000);
 		</script>
+		
+		<button onclick='colorClock()' style="text-align:center">--- TIME ---</button>
+		<script src="JS/do.js"></script>
 	</body>
 </html>
