@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<title>Play with W3.CSS</title>
+	<title>JavaScript and W3.CSS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="../CSS/style2.css">
+	<link rel="stylesheet" href="CSS/style2.css">
 	<body>
 		<h2>Animated Dropdown</h2>
 		<div class="w3-border">
@@ -11,14 +11,14 @@
 		</div>
 		<div class="w3-bar">
 			<div class="l4 m4 w3-bar-item">
-				<button onclick="menu(1)" class="w3-button w3-black w3-container w3-dropdown-click">Menu 1</button>
+				<button onclick="menu(1)" class="w3-button w3-black">Menu 1</button>
 				<div id="menu1" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-opacity">
 					<a id="btn1" onclick="button(1);menu(2);progress(33)" href="#" class="w3-bar-item w3-button">Link 1</a>
 					<a id="btn2" onclick="button(2);menu(2);progress(33)" href="#" class="w3-bar-item w3-button">Link 2</a>
 					<a id="btn3" onclick="button(3);menu(2);progress(33)" href="#" class="w3-bar-item w3-button">Link 3</a>
 				</div>
 			</div>
-			<div id="test" class="l4 m4 w3-bar-item w3-dropdown-click">
+			<div class="l4 m4 w3-bar-item" id="test">
 				<button onclick="menu(2)" class="w3-button w3-black">Menu 2</button>
 				<div id="menu2" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-opacity">
 					<a id="btn4" onclick="button(4);progress(66)" href="#" class="w3-bar-item w3-button">Link 4</a>
@@ -33,6 +33,6 @@
 			
 		</div>
 		
-		<script src="../JS/do.js"></script>
+		<script src="JS/do.js"></script>
 	</body>
 </html>
