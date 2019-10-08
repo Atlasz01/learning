@@ -4,11 +4,11 @@ function swapPage(page) {
 	// alert(x.data);
 	
 	if (x != null)
-    {
-        x.setAttribute('data', page);
-        // alert('Page should have been changed');
-    }
-		window.onload = changeData;
+	{
+		x.setAttribute('data', page);
+		// alert('Page should have been changed');
+	}
+	window.onload = changeData;
 }
 
 function menu(num) {
@@ -109,6 +109,9 @@ function colorClock(){
 	
 	var hexColor = '#' + hours + minutes + seconds;
 	document.body.style.background = hexColor;
+	
+	setTimeout(function() {
+				colorClock();
+			}, 1000);
+	//setTimeout(function() colorClock, 1000);
 }
-
-// setTimeout(function() colorClock(), 1000);
