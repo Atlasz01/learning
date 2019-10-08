@@ -1,3 +1,18 @@
+function movingBar(from,to) {
+  var elem = document.getElementById("movingBar");   
+  var width = from;
+  var id = setInterval(frame, 100);
+  function frame() {
+    if (width >= to) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
 function swapPage(page) {
 	var x = document.getElementById("page");
 	//alert(page);
@@ -8,7 +23,7 @@ function swapPage(page) {
 		x.setAttribute('data', page);
 		// alert('Page should have been changed');
 	}
-	window.onload = changeData;
+	//window.onload = changeData;
 }
 
 function menu(num) {
@@ -46,7 +61,7 @@ function buttonReact(n1,n2) {
 		} else { 
 		y.className = y.className.replace(" w3-show", "");
 	}
-}
+	}
 function buttonSmartReact(n1,n2) {
 	var x = document.getElementById("btn"+n1);
 	var y = document.getElementById("menu"+n2);
