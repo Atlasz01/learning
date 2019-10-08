@@ -32,7 +32,7 @@
 		<div class="w3-row">
 			<div class="w3-col l2 m2">
 				<div class="w3-bar-block w3-green w3-center">
-					<a href="#" class="w3-bar-item w3-button w3-blue">Animated JS dropdowns</a>
+					<button onclick='swapPage("20190926/main.html")' class="w3-bar-item w3-button w3-blue">Animated JS dropdowns</button>
 					<p class="w3-bar-item w3-green w3-hide-small">w3schools</p>
 					<a href="https://www.w3schools.com/html/default.asp" target="_blank" class="w3-bar-item w3-button w3-green w3-hide-small">HTML</a>
 					<a href="https://www.w3schools.com/css/default.asp" target="_blank" class="w3-bar-item w3-button w3-green w3-hide-small">CSS</a>
@@ -40,7 +40,8 @@
 					<a href="https://www.w3schools.com/bootstrap4/default.asp" class="w3-bar-item w3-button w3-green w3-hide-small">Bootstrap</a>
 					<a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-bar-item w3-button w3-green w3-hide-small">W3.CSS</a>
 					<button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button w3-green w3-hide-small">Projektek</button>
-					<a href="" onclick='swapPage("colclock.html")' class="w3-bar-item w3-button w3-green w3-hide-small">Color Clock</a>
+					<button onclick="document.getElementById('id02').style.display='block'" class="w3-bar-item w3-button w3-green w3-hide-small">Fireworks (object)</button>
+					<button onclick="document.getElementById('id03').style.display='block'" class="w3-bar-item w3-button w3-green w3-hide-small">Cubes (embed)</button>
 				</div>
 				<object class="main" id="main" data="colclock.html" width="100%" height="150" type="text/html">
 					Valami hiba történt
@@ -64,14 +65,38 @@
 				</header>
 				<div class="w3-container w3-bar-block w3-green">
 					<a class="w3-bar-item w3-hover-blue" href="https://pendragon-fb.eu/" target="_blank">Tanári oldal</a>
-					<a class="w3-bar-item w3-hover-blue" href="#">Animated Dropdown</a>
-					<a class="w3-bar-item w3-hover-blue" href="#">Color Clock</a>
-					<a class="w3-bar-item w3-hover-blue" href="#">Bootstrap</a>
-					<a class="w3-bar-item w3-hover-blue" href="#">Búbos banka</a>
+					<button class="w3-bar-item w3-green w3-hover-blue" href="#">Animated Dropdown</button>
+					<button class="w3-bar-item w3-green w3-hover-blue" href="#">Color Clock</button>
+					<button class="w3-bar-item w3-green w3-hover-blue" href="#">Bootstrap</button>
+					<button class="w3-bar-item w3-green w3-hover-blue" href="#">Búbos banka</button>
 				</div>
 				<footer class="w3-container w3-teal">
 					<p>Szerkesztő: Kiss Zoltán</p>
 				</footer>
+			</div>
+		</div>
+		
+		<div id="id02" class="w3-modal">
+			<div class="w3-modal-content">
+				<header class="w3-container w3-teal"> 
+					<span onclick="document.getElementById('id02').style.display='none'" 
+					class="w3-button w3-display-topright">&times;</span>
+					<h2>Animated Fireworks (not mine)</h2>
+				</header>
+				<object data="firework.html" width="100%" height="400" type="text/html">
+					Valami hiba történt
+				</object>
+			</div>
+		</div>
+		
+		<div id="id03" class="w3-modal">
+			<div class="w3-modal-content">
+				<header class="w3-container w3-teal"> 
+					<span onclick="document.getElementById('id03').style.display='none'" 
+					class="w3-button w3-display-topright">&times;</span>
+					<h2>Animated CSS Cube (not mine)</h2>
+				</header>
+				<embed src="animated-cube.html" width="100%" height="400">
 			</div>
 		</div>
 		

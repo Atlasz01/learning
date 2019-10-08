@@ -1,6 +1,6 @@
 function swapPage(page) {
 	var x = document.getElementById("page");
-	alert(page);
+	//alert(page);
 	// alert(x.data);
 	
 	if (x != null)
