@@ -7,9 +7,13 @@
 	<body>
 		<h2>Animated Dropdown</h2>
 		<div class="w3-border">
-			<div id="progress" class="w3-green" style="height:24px;width:0%"></div>
+			<div id="progress" class="w3-red" style="height:24px;width:0%"></div>
 		</div>
 		<div class="w3-bar">
+			<div class="l4 m4 w3-bar-item w3-container">
+				<button onclick="progress(100)" class="w3-button w3-green">Submit</button>
+				<button onclick="reset(6)" class="w3-button w3-red">Reset</button>	
+			</div>
 			<div class="l4 m4 w3-bar-item">
 				<button onclick="menu(1)" class="w3-button w3-black">Menu 1</button>
 				<div id="menu1" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-opacity">
@@ -26,18 +30,14 @@
 					<a id="btn6" onclick="button(6);progress(66)" href="#" class="w3-bar-item w3-button">Link 6</a>
 				</div>
 			</div>
-			<div class="l4 m4 w3-bar-item w3-container">
-				<button onclick="progress(100)" class="w3-button w3-green">Submit</button>
-				<button onclick="reset(6)" class="w3-button w3-red">Reset</button>	
-			</div>
-			
 		</div>
-		<table class="table-dark col-lg">
+		
+		<table class="list w3-table w3-centered col-lg">
 			<tr>
 				<th>Típus</th>
 				<th>Link</th>
 			</tr>
-			<tr>
+			<tr class="w3-hover-grey">
 			<td>Bootstrap</td>
 			<td><a href="20190918/bootstrap-test.html" target="_self">Bootstrap első teszt</a></td>
 			</tr>

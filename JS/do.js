@@ -1,3 +1,16 @@
+function swapPage(page) {
+	var x = document.getElementById("page");
+	alert(page);
+	// alert(x.data);
+	
+	if (x != null)
+    {
+        x.setAttribute('data', page);
+        // alert('Page should have been changed');
+    }
+		window.onload = changeData;
+}
+
 function menu(num) {
 	var n = num;
 	var x = document.getElementById("menu"+n);
